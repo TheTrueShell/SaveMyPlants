@@ -1,0 +1,43 @@
+{
+  "name": "SaveMyPlants!",
+  "version": "1.0.0",
+  "description": "A Telegram bot that notifies users when temperatures drop below freezing at their tracked locations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "init-db": "node scripts/init-db.js",
+    "setup": "npm run init-db && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "weather",
+    "plants",
+    "freezing",
+    "notifications"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "axios": "^1.8.1",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "geolib": "^3.3.4",
+    "node-cron": "^3.0.3",
+    "node-schedule": "^2.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
+}
