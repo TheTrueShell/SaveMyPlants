@@ -76,7 +76,7 @@ The bot uses a geographical caching system to minimize API calls to weather serv
 
 ## License
 
-ISC
+GNU GPLv3
 
 ## Acknowledgements
 
